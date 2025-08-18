@@ -119,4 +119,34 @@ public class TestLeetCode {
         .forEach(s -> System.out.println(s));
     }
 
+    @Test
+    public void powerTest(){
+        System.out.println(powerOfN(4, 2));
+    }
+
+    // степень n число m
+    public int powerOfN(int n, int m) {
+        if (n == 0) {
+            return 1;
+        } else {
+            int res = powerOfN(n - 1, m);
+            return res * m;
+        }
+    }
+
+    @Test
+    public void binaryTest(){
+        System.out.println(toBinary(177));
+    }
+
+    // Преобразование в двоичную систему
+    public String toBinary(int n) {
+        if (n <= 1 ) {
+            return String.valueOf(n);
+        }
+        String res = toBinary(n / 2);
+        String ostatok = String.valueOf(n % 2);
+        return res + ostatok;
+    }
+
 }

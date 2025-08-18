@@ -14,6 +14,7 @@ public class BracketGenerator {
     private void generate(int n, int openCount, int closeCount, String currentString, List<String> result) {
         // Base case: if both counts reach n, a valid sequence is formed
         System.out.println("Entry " + (i++) +" - " + openCount + " " + closeCount);
+
         if (openCount == n && closeCount == n) {
             result.add(currentString);
             System.out.println();
@@ -22,7 +23,7 @@ public class BracketGenerator {
 
         // Add an opening bracket if allowed
         if (openCount < n) {
-            generate(n, openCount + 1, closeCount, currentString + "(", result);
+            generate(n, openCount + 1 , closeCount, currentString + "(", result);
         }
 
         // Add a closing bracket if allowed (ensuring validity)
