@@ -4,31 +4,31 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BracketGenerator {
-    int i =0;
+    //int i =0;
     public List<String> generateParenthesis(int n) {
         List<String> result = new ArrayList<>();
-        generate(n, 0, 0, "", result);
+        generate("Root ", n, 0, 0, "", result);
         return result;
     }
 
-    private void generate(int n, int openCount, int closeCount, String currentString, List<String> result) {
+    private void generate(String from, int n, int openCount, int closeCount, String currentString, List<String> result) {
         // Base case: if both counts reach n, a valid sequence is formed
-        System.out.println("Entry " + (i++) +" - " + openCount + " " + closeCount);
+        System.out.println(from + " " + openCount + " " + closeCount + " "+currentString);
 
         if (openCount == n && closeCount == n) {
             result.add(currentString);
-            System.out.println();
+            System.out.println("currentString -----> "+currentString ); // for debug only
             return;
         }
 
         // Add an opening bracket if allowed
         if (openCount < n) {
-            generate(n, openCount + 1 , closeCount, currentString + "(", result);
+            generate("OpenCount", n, openCount + 1 , closeCount, currentString + "(", result);
         }
 
         // Add a closing bracket if allowed (ensuring validity)
         if (closeCount < openCount) {
-            generate(n, openCount, closeCount + 1, currentString + ")", result);
+            generate("CloseCount ", n, openCount, closeCount + 1, currentString + ")", result);
         }
     }
 
