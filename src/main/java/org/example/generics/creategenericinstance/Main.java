@@ -1,5 +1,12 @@
 package org.example.generics.creategenericinstance;
 
+
+/*
+    Create an Instance of Generic
+    1. Define the Sender interface with the send() method
+    2. create a concrete implementation - EmailSender for sending emails
+    3. Using Reflection - SenderServiceReflection
+ */
 public class Main {
 
     public static void main(String [] args){

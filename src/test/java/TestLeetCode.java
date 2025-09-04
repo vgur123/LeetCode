@@ -7,11 +7,11 @@ import java.util.stream.Stream;
 public class TestLeetCode {
 
     @Test
-    public void test1() {
+    public void mustiplyStringsTest() {
         //String num1 = "123456789";
         //String num2 = "987654321";
-        String num1 = "123";
-        String num2 = "321";
+        String num1 = "99999";
+        String num2 = "99";
 
         if (num1.equals("0") || num2.equals("0")) {
             //return "0";
@@ -147,6 +147,17 @@ public class TestLeetCode {
         String res = toBinary(n / 2);
         String ostatok = String.valueOf(n % 2);
         return res + ostatok;
+    }
+
+    @Test
+    public void intSplitTest(){
+        int num = 789;
+        int numLen = String.valueOf(num).length();
+        for (int i = 0; i<numLen; i++){
+            System.out.println(num%10);
+            num /= 10;
+        }
+
     }
 
 }
