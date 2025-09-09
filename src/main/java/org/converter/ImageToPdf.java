@@ -9,7 +9,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class ImageToPdf {
-    private void generatePDFFromImage(String filename, String extension) throws MalformedURLException {
+    private static void generatePDFFromImage(String filename, String extension) throws MalformedURLException {
         String localFilePath = "C:\\Work\\LeetCode\\src\\main\\resources\\sun_cert.jpg";
         URL input = new URL("file:///" + localFilePath.replace("\\", "/"));
 
@@ -36,16 +36,14 @@ public class ImageToPdf {
             //image.setAlignment(Element.ALIGN_CENTER);
             image.scaleToFit(640,480);
             document.add(image);
-        } catch (DocumentException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
+        } catch (DocumentException | IOException e) {
             throw new RuntimeException(e);
         }
         document.close();
         writer.close();
     }
 
-    public void textToPdf() throws DocumentException {
+    public static void textToPdf() throws DocumentException {
         String fileName = "C:\\Work\\LeetCode\\src\\main\\resources\\CV.txt";
 
         Document pdfDoc = new Document(PageSize.A4);
@@ -87,10 +85,10 @@ public class ImageToPdf {
         }
     }
 
+
     @SneakyThrows
     public static void main(String [] argv) throws MalformedURLException {
-        ImageToPdf converter = new ImageToPdf();
-        //converter.generatePDFFromImage("sun_cert","jpg");
-        converter.textToPdf();
+        //generatePDFFromImage("sun_cert","jpg");
+        //textToPdf();
     }
 }
