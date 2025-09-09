@@ -1,0 +1,64 @@
+FULL NAME  
+[Your City], Serbia | [Your Email] | [Phone Number] | LinkedIn: [URL] | GitHub: [URL]  
+
+
+💼 PROFESSIONAL SUMMARY  
+
+Experienced Java Backend Developer with over 8 years of hands-on expertise across the full software development lifecycle. Specialized in building scalable, non-blocking reactive APIs using Java 8+, Spring WebFlux, and modern cloud-native stacks (Docker, Kubernetes, OpenShift). Proven track record in enterprise banking projects, microservices development, CI/CD automation, and agile environments. Strong analytical thinker and team player with a commitment to clean, testable code.
+
+
+
+🛠️ TECHNICAL SKILLS
+
+Languages: Java (1.5 – 1.9), SQL, Bash  
+Frameworks/Libraries: Spring Boot, Spring WebFlux, Spring Cloud, Spring MVC, Hibernate, JPA  
+Reactive Programming: Mono, Flux, Project Reactor  
+Tools & DevOps: Docker, Kubernetes, OpenShift, Jenkins, Maven, Git, GitHub, Bitbucket  
+Testing: JUnit 3/4/5, Mockito  
+Databases: PostgreSQL, MS SQL Server  
+Messaging & Logging: Kafka, MQ
+Web/Application Servers: OpenShift Container Platform, WebLogic, Apache Tomcat  
+Development Tools: IntelliJ IDEA, Postman, JIRA  
+Methodologies: Agile (Scrum), Waterfall  
+
+
+🏢 PROFESSIONAL EXPERIENCE  
+
+Java Backend Developer 
+Commercial Bank Project – Belgrade, Serbia  
+Mar 2018 – Present
+
+Project: Connecting Sberbank to the Russian System for Fast Payments (SFP) 
+- Developed non-blocking reactive APIs using Spring WebFlux, Mono, and Flux to support instant mobile and QR-based payments.  
+- Leveraged Java 8+ features such as Streams, Lambdas, and CompletableFutures for concise, functional programming.  
+- Implemented microservices architecture with RESTful APIs; handled feature development, tech debt, and bug fixing.  
+- Integrated business logic using Spring MVC, Spring DI/IOC, annotations, and Hibernate for persistence.  
+- Designed backend flows using JPA and HQL/SQL queries to interact with PostgreSQL databases.  
+- Deployed services to OpenShift with CI/CD pipelines managed via Jenkins, Docker, and Kubernetes.  
+- Configured logging and monitoring using Spring Actuator, Log4J, Sleuth, and Splunk.  
+- Wrote robust unit tests and integration tests using JUnit and Mockito.  
+- Used Git, Bitbucket, and SourceTree for version control and collaboration.  
+- Participated in daily standups and 2-week sprints following Agile/Scrum methodology.  
+- Actively collaborated with clients, vendors, and internal stakeholders to ensure on-time delivery.  
+
+
+🎓 EDUCATION 
+ 
+Moscow Institute of Economics and Statistics – [1984 - 1989]
+
+
+📄 CERTIFICATIONS 
+
+- Sun Certified Programmer
+- Sun Certified Business Component Developer
+- Developing EJBs with IBM Rational Application developer
+- Web Services Development with IBM Rational Application developer
+- IBM WebSphere MQ Programming
+
+
+🌐 LANGUAGES  
+
+- Russian – Native  
+- English – Upper intermediate  
+- Serbian - Elementary
+
