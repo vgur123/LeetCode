@@ -1,6 +1,6 @@
 package org.arrays;
 
-public class BracketCheck {
+public class  BracketCheck {
 
     public static void main(String [] argv){
         String str = "{({[()])}";
