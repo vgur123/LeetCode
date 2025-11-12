@@ -1,7 +1,6 @@
-package org.example.threads;
+package org.example.threads.queue;
 
 import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.TimeUnit;
 
 public class ArrayBlockingQueueExample {
 

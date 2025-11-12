@@ -88,7 +88,7 @@ public class TestLeetCode {
     @Test
     public void test4() {
 
-        int[][] exarray2D = { {1, 2, 3}, {4, 5, 6},{7, 8, 9}};
+        int[][] exarray2D = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         int totalElements = 0;
 
         for (int[] row : exarray2D) {
@@ -113,14 +113,14 @@ public class TestLeetCode {
     }
 
     @Test
-    public void t(){
+    public void t() {
         Stream<Integer> numStream = Stream.of(10, 20, 30);
         numStream.map(n -> n + 10) //.peek(s -> System.out.print(s))
-        .forEach(s -> System.out.println(s));
+                .forEach(s -> System.out.println(s));
     }
 
     @Test
-    public void powerTest(){
+    public void powerTest() {
         System.out.println(powerOfN(4, 2));
     }
 
@@ -135,13 +135,13 @@ public class TestLeetCode {
     }
 
     @Test
-    public void binaryTest(){
+    public void binaryTest() {
         System.out.println(toBinary(177));
     }
 
     // Преобразование в двоичную систему
     public String toBinary(int n) {
-        if (n <= 1 ) {
+        if (n <= 1) {
             return String.valueOf(n);
         }
         String res = toBinary(n / 2);
@@ -150,14 +150,45 @@ public class TestLeetCode {
     }
 
     @Test
-    public void intSplitTest(){
+    public void intSplitTest() {
         int num = 789;
         int numLen = String.valueOf(num).length();
-        for (int i = 0; i<numLen; i++){
-            System.out.println(num%10);
+        for (int i = 0; i < numLen; i++) {
+            System.out.println(num % 10);
             num /= 10;
         }
 
+    }
+
+    @Test
+    public void divTest() {
+        float num = 5 / 2;
+        System.out.println(num);
+
+    }
+
+    @Test
+    public void ifTest() {
+        String sums = "10007,20003,30009,40001,50007,60004,70005,80008,90002,100000";
+        String discs = "1,2,3,4,5,6,7,8,9,10";
+        System.out.println(processingInputLines(sums,discs));
+    }
+
+    public int processingInputLines(String payments, String discounts) {
+        int result = 0;
+        String[] pays =payments.split(",");
+        String[] discs =discounts.split(",");
+
+        for (int i=0; i<pays.length; i++){
+            int sn = Integer.parseInt(pays[i]);
+            int pr = Integer.parseInt(discs[i]);
+            double disc = ((sn * pr)/100);
+            result += (sn-disc);
+
+        }
+
+
+        return result;
     }
 
 }
